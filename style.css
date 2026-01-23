@@ -8,7 +8,7 @@
 }
 
 a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ a {
 
 .navbar ul li:hover a,
 .navbar ul li.active a {
-    color: #656666;
+    color: #5e5c5c;
 }
 
 .home {
@@ -250,4 +250,7 @@ a {
     100% {
         transform: translateY(0%);
     }
+}
+h1{
+    color: #0f7cd6;
 }
