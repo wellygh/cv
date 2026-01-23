@@ -254,3 +254,118 @@ a {
 h1{
     color: #0f7cd6;
 }
+
+/* ====== RESPONSIVE FIX ====== */
+
+body {
+  overflow-x: hidden;
+}
+
+/* تابلت */
+@media (max-width: 992px) {
+  .home {
+    padding: 90px 6% 20px;
+    gap: 30px;
+  }
+
+  .home-info h1 {
+    font-size: 40px;
+  }
+
+  .home-info h2 {
+    font-size: 24px;
+  }
+
+  .home-info p {
+    font-size: 18px;
+  }
+
+  .home-img .img-box {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+/* جوال */
+@media (max-width: 768px) {
+
+  /* navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 5%;
+    background: #1f242d;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .navbar .logo {
+    font-size: 22px;
+  }
+
+  .navbar ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4px;
+  }
+
+  .navbar ul li {
+    margin-left: 10px;
+  }
+
+  .navbar ul li a {
+    font-size: 14px;
+  }
+
+  /* المحتوى تحت المنيو */
+  .home {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 120px 6% 30px;   /* لو لسه يلمس المنيو زِد الرقم إلى 140 أو 150 */
+    gap: 20px;
+  }
+
+  .home-info h1 {
+    font-size: 26px;
+  }
+
+  .home-info h2 {
+    font-size: 16px;
+  }
+
+  .home-info p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .home-info .btn-sci {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .home-info .btn-sci .sci {
+    margin-left: 0;
+  }
+
+  .home-img .img-box {
+    width: 190px;
+    height: 190px;
+    margin: 10px auto 0;
+  }
+
+  .home-img .img-box .img-item img {
+    top: 15px;
+    width: 90%;
+  }
+}
